@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Style Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f0ebf8;
+    padding:40px;
+}
+
+.form-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.header{
+    background:#673ab7;
+    height:12px;
+    border-radius:8px 8px 0 0;
+}
+
+.form-card{
+    background:white;
+    padding:30px;
+    border-radius:0 0 8px 8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#202124;
+    margin-bottom:10px;
+}
+
+.description{
+    color:#5f6368;
+    margin-bottom:30px;
+}
+
+.question{
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-bottom:2px solid #ccc;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-bottom:2px solid #673ab7;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-top:10px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    font-weight:normal;
+    display:block;
+    margin:8px 0;
+}
+
+button{
+    background:#673ab7;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5a2ea6;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+
+<div class="header"></div>
+
+<div class="form-card">
+
+<h1>Student Registration Form</h1>
+
+<p class="description">
+Please fill out the form below.
+</p>
+
+<form>
+
+<div class="question">
+<label>Full Name *</label>
+<input type="text" required>
+</div>
+
+<div class="question">
+<label>Email *</label>
+<input type="email" required>
+</div>
+
+<div class="question">
+<label>Age</label>
+<input type="number">
+</div>
+
+<div class="question">
+<label>Gender</label>
+
+<div class="radio-group">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+</div>
+
+</div>
+
+<div class="question">
+<label>Favorite Subjects</label>
+
+<div class="checkbox-group">
+<label><input type="checkbox"> Mathematics</label>
+<label><input type="checkbox"> Science</label>
+<label><input type="checkbox"> English</label>
+<label><input type="checkbox"> Computer Science</label>
+</div>
+
+</div>
+
+<div class="question">
+<label>Country</label>
+
+<select>
+<option>Select Country</option>
+<option>India</option>
+<option>USA</option>
+<option>Canada</option>
+<option>Australia</option>
+</select>
+
+</div>
+
+<div class="question">
+<label>Comments</label>
+
+<textarea rows="5"></textarea>
+
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+Google Form Style Demo
+</div>
+
+</div>
+
+</body>
+</html>
